@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         Author pushkin = new Author("Александр "," Пушкин");
         Author dostoevsky = new Author("Фёдор "," Достоевский");
-    Book monument = new Book("Памятник","Пушкин",1873);
-    Book whiteNights = new Book("Белые ночи","Достоевский",1848);
+    Book monument = new Book("Памятник",pushkin,1873);
+    Book whiteNights = new Book("Белые ночи",dostoevsky,1848);
         System.out.println("Книга " + monument.getName());
         System.out.println("Автор : " + pushkin.getName() + monument.getAuthor());
         System.out.println("Дата издания : " + monument.getPublishingYear());
